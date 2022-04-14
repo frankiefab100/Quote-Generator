@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;700&display=swap");
+
+#root,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: linear-gradient(to right, #008a29, #47e978);
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.quote-container {
+  background-color: #0a0a1f;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  max-width: 450px;
+  min-height: 200px;
+  height: auto;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.quotes {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 35px;
+}
+
+.author {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button {
+  background-color: #0ab635;
+  color: #f6f6f6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #0ab635;
+}
+
+@media screen and (max-width: 450px) {
+  .quote-container {
+    width: 100%;
+    margin: 20px;
+  }
+}
