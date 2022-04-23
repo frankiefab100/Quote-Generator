@@ -9,7 +9,13 @@ function App() {
 
   function getRandomQuote() {
     axios
-      .get("https://favqs.com/api/qotd")
+      .get("https://favqs.com/api/qotd", {
+        headers: {
+          "Cache-Control": "no-cache",
+          Pragma: "no-cache",
+          Expires: "0",
+        },
+      })
       .then((response) => {
         const result = response.data.quote;
         setQuote(result.body);
